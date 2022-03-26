@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="854976fb-6d24-453a-bfe4-b461a0205e8c" name="变更" comment="" />
+    <list default="true" id="854976fb-6d24-453a-bfe4-b461a0205e8c" name="变更" comment="">
+      <change afterPath="$PROJECT_DIR$/java_Senior/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_Senior/src/com/company/helloworld.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_Senior/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_Senior/src/com/company/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_Senior/untitled104.iml" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -11,7 +17,7 @@
     <option name="done" value="true" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/Java_l" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -96,6 +102,7 @@
       <workItem from="1648035040508" duration="148000" />
       <workItem from="1648035222917" duration="365000" />
       <workItem from="1648035838889" duration="33000" />
+      <workItem from="1648121412940" duration="200000" />
     </task>
     <servers />
   </component>
