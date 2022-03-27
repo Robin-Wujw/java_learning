@@ -25,6 +25,9 @@ package java01;
  *   setPriority(int p):设置线程的优先级
  *   说明：高优先级的线程要抢占低优先级线程cpu的执行权。但是只是从概率上讲，高优先级的线程高概率的情况下被执行。
  *   并不意味着只有高优先级的线程执行完以后低优先级的线程才执行。
+ *
+ * 线程通信: wait() / notify() / notifyAll():此三个方法定义在Object类中
+ * 线程的分类： 守护线程 用户线程
  */
 
 class HelloThread extends Thread{
