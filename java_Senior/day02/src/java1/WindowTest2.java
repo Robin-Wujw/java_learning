@@ -1,3 +1,5 @@
+package java1;
+
 /**
  *  使用同步代码块解决继承Thread类的线程安全问题
  * 例子：创建三个窗口卖票，总票数为100张，使用继承Thread类的方式
@@ -16,8 +18,8 @@ class Window2 extends Thread{
         while(true){
             //正确的
             //synchronized (obj){
-            synchronized (Window2.class){//Class clazz = Window2.class
-            //Window2.class只会加载一次
+            synchronized (Window2.class){//Class clazz = java.Window2.class
+            //java.Window2.class只会加载一次
             //错误的: this代表着t1,t2,t3三个对象
             //synchronized (this){
             if(ticket > 0){
