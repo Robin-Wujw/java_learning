@@ -1,3 +1,5 @@
+package com.company.project3.team.junit;
+
 import org.junit.Test;
 
 import com.company.project3.team.domain.Employee;

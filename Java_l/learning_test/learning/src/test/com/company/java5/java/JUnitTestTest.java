@@ -1,4 +1,4 @@
-package test.com.company.java5.java; 
+package learning.src.test.com.company.java5.java;
 
 import org.junit.Test; 
 import org.junit.Before; 

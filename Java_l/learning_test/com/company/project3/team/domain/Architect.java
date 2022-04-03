@@ -1,7 +1,5 @@
 package com.company.project3.team.domain;
 
-import com.company.project3.team.domain.Designer;
-
 public class Architect extends Designer {
     private int stock;
 

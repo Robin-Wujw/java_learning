@@ -1,7 +1,5 @@
 package com.company.java7;
 
-import com.company.java1.Main;
-
 /**
  * @Author: Robin_Wujw
  * @Date: 2021/9/28 11:23

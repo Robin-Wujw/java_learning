@@ -1,3 +1,5 @@
+package com.company.java9;
+
 interface  A {
     int x = 0;
     int x1 = 2;

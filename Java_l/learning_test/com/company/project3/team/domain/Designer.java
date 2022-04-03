@@ -1,7 +1,5 @@
 package com.company.project3.team.domain;
 
-import com.company.project3.team.domain.Programmer;
-
 public class Designer extends Programmer {
     private double bonus;
 

@@ -58,5 +58,4 @@ public class LockTest {
         t2.start();
         t3.start();
     }
-
 }
