@@ -1,4 +1,5 @@
 import javax.naming.SizeLimitExceededException;
+import java.util.LinkedList;
 
 /**
  * @Author: Robin_Wujw
@@ -53,9 +54,17 @@ public class MyLinkedList {
     public Node node(int index){
         Node temp = null;
         if(first!=null){
-            temp = first;
-            for (int i = 0; i <index; i++) {
-                temp = temp.next;
+            if (index < (size >> 1)) {
+                temp = first;
+                for (int i = 0; i < index; i++) {
+                    temp = temp.next;
+                }
+            } else {
+                temp = last;
+                for (int i = size-1 ; i > index ; i--) {
+                    temp = temp.previous;
+                }
+
             }
         }
         return temp;
@@ -88,9 +97,11 @@ public class MyLinkedList {
         list.add("bbb");
         list.add(1,"BBBBB");
         list.add("ccc");
+        list.add("ddd");
+        list.add("eee");
         //list.remove(1);
 
         System.out.println(list.size());
-        System.out.println(list.get(1));
+        System.out.println(list.get(4));
     }
 }

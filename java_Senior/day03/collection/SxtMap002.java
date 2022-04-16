@@ -14,6 +14,8 @@ public class SxtMap002 {
 
     public void put(Object key,Object value){
         SxtEntry e = new SxtEntry(key,value);
+        int hash = key.hashCode();
+        hash = hash<0?-hash:hash;
         int a = key.hashCode() %arr.length;
         if(arr[a] == null){
             LinkedList list = new LinkedList();
