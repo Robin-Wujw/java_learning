@@ -12,7 +12,7 @@ import java.io.*;
 public class IOTest04 {
     public static void main(String[] args) {
         //1.创建源
-        File dest = new File("src/day04/IOStream/dest.txt");
+        File dest = new File("IOTest04");
         //2.选择流
         OutputStream os = null;
         try{
