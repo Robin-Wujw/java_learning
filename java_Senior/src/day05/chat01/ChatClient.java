@@ -14,6 +14,7 @@ public class ChatClient {
         Socket client = new Socket("localhost",8888);
         //2.客户端发送消息
         //2.操作： 输入输出流操作
+        //控制台输入消息
         BufferedReader console = new BufferedReader(new InputStreamReader(System.in));
         String msg = console.readLine();
         DataOutputStream dos = new DataOutputStream(client.getOutputStream());

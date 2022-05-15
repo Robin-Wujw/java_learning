@@ -7,6 +7,8 @@
       <sourceFolder url="file://$MODULE_DIR$/tcp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/udp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/chat01" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/chat02" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/chat03" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

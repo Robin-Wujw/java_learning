@@ -13,7 +13,7 @@ import java.net.Socket;
  * @Author: Robin_Wujw
  * @Date: 2022-05-03 14:50
  */
-public class TMultiServer2 {
+public class TMultiServer {
     public static void main(String[] args) throws IOException {
         System.out.println("------server-------");
         //1.指定端口 使用ServerSocket创建服务器

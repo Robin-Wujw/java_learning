@@ -7,7 +7,7 @@ import java.net.Socket;
  * @Author: Robin_Wujw
  * @Date: 2022-05-03 14:50
  */
-public class TMultiClient2 {
+public class TMultiClient {
     public static void main(String[] args) throws IOException {
         System.out.println("------client--------");
         //1.建立连接 使用Socket创建客户端 + 服务器的地址和端口
