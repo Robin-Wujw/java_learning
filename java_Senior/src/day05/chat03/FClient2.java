@@ -9,7 +9,7 @@ import java.net.Socket;
  * @Author: Robin_Wujw
  * @Date: 2022-05-03 14:50
  */
-public class FClient {
+public class FClient2 {
     public static void main(String[] args) throws IOException {
         System.out.println("------client--------");
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));

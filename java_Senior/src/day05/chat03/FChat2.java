@@ -3,17 +3,15 @@ import java.io.DataOutputStream;
 import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
 
 /**
  * 在线聊天室：服务端
- * 目标：加入容器实现群聊
+ * 目标：私聊
  * @Author: Robin_Wujw
  * @Date: 2022-05-03 14:50
  */
-public class FChat {
+public class FChat2 {
     private static CopyOnWriteArrayList<Channel> all = new CopyOnWriteArrayList<Channel>();
     public static void main(String[] args) throws IOException {
         System.out.println("------server-------");
@@ -72,8 +70,20 @@ public class FChat {
             }
         }
         //群聊：获取自己的消息，发给其他人
+        //私聊：约定数据格式：@xxx:msg
         private void sendOthers(String msg,boolean isSys){
-            for(Channel other: all){
+            boolean isPrivate = msg.startsWith("@");
+            if(isPrivate){//私聊
+                //获取目标和数据
+                int idx = msg.indexOf(":");
+                String targetName = msg.substring(1,idx);
+                msg = msg.substring(idx+1);
+                for(Channel other: all){
+                    if(other.name.equals(targetName)){
+                        other.send(this.name + "悄悄地对你说：" + msg);//私聊消息
+                    }
+                }
+            }else{ for(Channel other: all){
                 if(other==this){//自己
                     continue;
                 }
@@ -82,6 +92,8 @@ public class FChat {
                 }else{
                     other.send(msg);//系统消息
                 }
+            }
+
             }
         }
         //释放资源
