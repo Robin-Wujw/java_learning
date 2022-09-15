@@ -1,0 +1,5 @@
+0:0:0:0:0:0:0:1 - - [05/Aug/2022:15:35:42 +0800] "GET /request-demo/login.html HTTP/1.1" 200 756 http-bio-80-exec-1 25
+0:0:0:0:0:0:0:1 - - [05/Aug/2022:15:35:42 +0800] "GET /request-demo/css/login.css HTTP/1.1" 304 - http-bio-80-exec-3 4
+0:0:0:0:0:0:0:1 - - [05/Aug/2022:15:35:42 +0800] "GET /request-demo/imgs/Desert.jpg HTTP/1.1" 304 - http-bio-80-exec-4 3
+0:0:0:0:0:0:0:1 - - [05/Aug/2022:15:35:42 +0800] "GET /favicon.ico HTTP/1.1" 404 - http-bio-80-exec-5 0
+0:0:0:0:0:0:0:1 - - [05/Aug/2022:15:35:50 +0800] "POST /request-demo/login.jsp HTTP/1.1" 200 111190 http-bio-80-exec-6 936
